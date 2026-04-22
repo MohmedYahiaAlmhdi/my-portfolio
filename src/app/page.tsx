@@ -209,7 +209,7 @@ const TIMELINE_ITEMS = [
   {
     type: "training",
     title: "Flutter Development Trainee",
-    subtitle: "Tamkeen Mubarmez",
+    subtitle: "Tamkeen",
     description:
       "Completed intensive Flutter development training covering mobile app development with Dart and GetX.",
     date: "2024 – 2025",
@@ -1904,10 +1904,10 @@ function ContactSection() {
                     <div>
                       <p className="text-sm font-medium text-card-foreground">Phone</p>
                       <a
-                        href="tel:+963934192156"
+                        href="tel:+963952516434"
                         className="text-sm text-muted-foreground hover:text-emerald-500 transition-colors"
                       >
-                        +963 934 192 156
+                        +963 952 516 434
                       </a>
                     </div>
                   </CardContent>
@@ -1977,7 +1977,7 @@ function ContactSection() {
                       <Label htmlFor="name">Your Name</Label>
                       <Input
                         id="name"
-                        placeholder="John Doe"
+                        placeholder="your name"
                         value={formData.name}
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
@@ -1991,7 +1991,7 @@ function ContactSection() {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder="your email@example.com"
                         value={formData.email}
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
