@@ -212,7 +212,7 @@ const TIMELINE_ITEMS = [
     subtitle: "Tamkeen",
     description:
       "Completed intensive Flutter development training covering mobile app development with Dart and GetX.",
-    date: "2024 – 2025",
+    date: "2025 – 2026",
     icon: Award,
   },
   {
@@ -1827,38 +1827,23 @@ function ContactSection() {
     email: "",
     message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [submitted, setSubmitted] = useState(false);
-  const [submitError, setSubmitError] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitError("");
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-      const data = await res.json();
+  const subject = encodeURIComponent(`Portfolio Contact: Message from ${formData.name}`);
+  const body = encodeURIComponent(
+    `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+  );
+  window.location.href = `mailto:mohmedyahiaalmhdi@gmail.com?subject=${subject}&body=${body}`;
 
-      if (!res.ok) {
-        setSubmitError(data.error || "Something went wrong.");
-        return;
-      }
-
-      setSubmitted(true);
-      setFormData({ name: "", email: "", message: "" });
-      setTimeout(() => setSubmitted(false), 4000);
-    } catch {
-      setSubmitError("Network error. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  setSubmitted(true);
+  setFormData({ name: "", email: "", message: "" });
+  setTimeout(() => setSubmitted(false), 4000);
+};
 
   return (
     <section id="contact" className="section-padding relative">
@@ -2015,30 +2000,15 @@ function ContactSection() {
                       className="bg-background/50 border-border/50 focus:border-emerald-500/50 focus:ring-emerald-500/20 resize-none"
                     />
                   </div>
-                  <Button
+                 <Button
                     type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl h-11 font-medium shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-all send-button-pulse"
-                  >
-                    {isSubmitting ? (
-                      <span className="flex items-center gap-2">
-                        <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        Sending...
-                      </span>
-                    ) : submitted ? (
-                      <span className="flex items-center gap-2">
-                        ✓ Message Sent!
-                      </span>
+                    className="...">
+                    {submitted ? (
+                      <span>...✓ Message Sent!</span>
                     ) : (
-                      <span className="flex items-center gap-2">
-                        <Send className="w-4 h-4" />
-                        Send Message
-                      </span>
+                      <span>...Send Message</span>
                     )}
                   </Button>
-                  {submitError && (
-                    <p className="text-sm text-red-500 text-center">{submitError}</p>
-                  )}
                 </form>
               </CardContent>
             </Card>
