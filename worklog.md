@@ -104,7 +104,7 @@ Agent: Main Agent
 Task: Build professional portfolio website for Mohmed Yahia Almhdi
 
 Work Log:
-- Extracted CV content from uploaded PDF (Mohmed_Yahia_CV.pdf)
+- Extracted CV content from uploaded PDF (Mohmed_Yahia_ATS_CV.pdf)
 - Identified key information: Name, Contact, Skills, Projects, Experience, Education, Certifications
 - Generated professional avatar image using AI Image Generation (saved as /public/profile-avatar.png)
 - Designed portfolio structure with 8 sections: Navbar, Hero, About, Skills, Projects, Timeline, Contact, Footer
@@ -190,7 +190,7 @@ Hero → ScrollProgress → Quote → ValueProps → Services → About → Skil
 - `src/lib/db.ts` — Prisma database client
 - `src/components/portfolio/theme-provider.tsx` — Theme provider
 - `public/profile-avatar.png` — AI-generated avatar
-- `public/Mohmed_Yahia_CV.pdf` — CV for download
+- `public/Mohmed_Yahia_ATS_CV.pdf` — CV for download
 - `public/projects/` — Project screenshots (market-clothes.png, real-estate-flutter.png, rimberio.png, land-of-stories.png)
 
 ## Next Phase Recommendations (Priority Order)

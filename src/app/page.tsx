@@ -800,7 +800,7 @@ function HeroSection() {
                 className="rounded-xl px-8 h-12 text-base font-medium border-emerald-500/20 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-emerald-500"
                 asChild
               >
-                <a href="/Mohmed_Yahia_CV.pdf" download>
+                <a href="/Mohmed_Yahia_ATS_CV.pdf" download>
                   <Download className="w-4 h-4 mr-2" />
                   Download CV
                 </a>
@@ -1179,7 +1179,7 @@ function AboutSection() {
 
               {/* Download Resume */}
               <a
-                href="/Mohmed_Yahia_CV.pdf"
+                href="/Mohmed_Yahia_ATS_CV.pdf"
                 download
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-sm font-medium hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all duration-200 group"
               >
@@ -2071,7 +2071,7 @@ function CTASection() {
                 className="rounded-xl px-8 h-12 text-base font-medium border-emerald-500/20 hover:bg-emerald-500/10 hover:border-emerald-500/40 text-emerald-500"
                 asChild
               >
-                <a href="/Mohmed_Yahia_CV.pdf" download>
+                <a href="/Mohmed_Yahia_ATS_CV.pdf" download>
                   <Download className="w-4 h-4 mr-2" />
                   Download CV
                 </a>

@@ -37,7 +37,7 @@ Add new features to Mohmed Yahia Almhdi's portfolio: Blog section, CTA section, 
 ### 4. Download Resume Link in About Section
 - Added styled link below certifications card
 - Emerald border, Download icon with hover translate animation
-- Links to /Mohmed_Yahia_CV.pdf with download attribute
+- Links to /Mohmed_Yahia_ATS_CV.pdf with download attribute
 
 ### 5. Navigation Update
 - Added "Blog" to NAV_LINKS between Projects and Experience

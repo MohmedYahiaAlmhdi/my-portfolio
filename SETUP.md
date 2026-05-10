@@ -124,7 +124,7 @@ git push -u origin main
 ├── 📁 public/          ← الصور والملفات الثابتة
 │   ├── 📁 projects/    ← صور المشاريع
 │   ├── profile-avatar.png
-│   └── Mohmed_Yahia_CV.pdf
+│   └── Mohmed_Yahia_ATS_CV.pdf
 ├── 📁 src/
 │   ├── 📁 app/         ← الصفحات و API
 │   │   ├── page.tsx    ← الصفحة الرئيسية
