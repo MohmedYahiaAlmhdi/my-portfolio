@@ -249,6 +249,7 @@ const CERTIFICATIONS = [
   "Back-End Development Certificate – SEF Academy",
   "EF SET English Certificate",
   "Flutter Development Certificate – Tamkeen",
+  "Introduction to Python Certificate - SoloLearn",
 ];
 
 const TESTIMONIALS = [
@@ -352,7 +353,7 @@ const PROCESS_STEPS = [
 const ACHIEVEMENTS = [
   { title: "100+ GitHub Repos", icon: GitBranch, color: "from-emerald-500 to-teal-500" },
   { title: "500+ Commits", icon: GitCommitHorizontal, color: "from-teal-500 to-cyan-500" },
-  { title: "3 Certifications", icon: Award, color: "from-cyan-500 to-emerald-500" },
+  { title: "5 Certifications", icon: Award, color: "from-cyan-500 to-emerald-500" },
   { title: "Open Source", icon: Globe, color: "from-emerald-500 to-green-500" },
   { title: "Clean Code", icon: Code2, color: "from-teal-500 to-emerald-500" },
   { title: "Fast Learner", icon: Zap, color: "from-amber-500 to-orange-500" },
@@ -1126,7 +1127,7 @@ function AboutSection() {
                 <Card className="glass-card card-lift py-5 gap-2 text-center">
                   <CardContent className="px-4 py-0">
                     <div className="text-3xl font-bold gradient-text mb-1">
-                      <AnimatedCounter end={4} suffix="+" />
+                      <AnimatedCounter end={20} suffix="+" />
                     </div>
                     <p className="text-sm text-muted-foreground">Projects Completed</p>
                   </CardContent>
@@ -1142,7 +1143,7 @@ function AboutSection() {
                 <Card className="glass-card card-lift py-5 gap-2 text-center">
                   <CardContent className="px-4 py-0">
                     <div className="text-3xl font-bold gradient-text mb-1">
-                      <AnimatedCounter end={6} suffix="+" />
+                      <AnimatedCounter end={10} suffix="+" />
                     </div>
                     <p className="text-sm text-muted-foreground">Languages & Frameworks</p>
                   </CardContent>
@@ -1150,7 +1151,7 @@ function AboutSection() {
                 <Card className="glass-card card-lift py-5 gap-2 text-center">
                   <CardContent className="px-4 py-0">
                     <div className="text-3xl font-bold gradient-text mb-1">
-                      <AnimatedCounter end={4} />
+                      <AnimatedCounter end={5} />
                     </div>
                     <p className="text-sm text-muted-foreground">Certifications</p>
                   </CardContent>
